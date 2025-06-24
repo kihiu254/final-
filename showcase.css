@@ -1,0 +1,152 @@
+/* Product Showcase Styles */
+.product-showcase {
+    padding: 60px 0;
+    background: #f9f9f9;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.product-showcase.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.shop-now-btn {
+    animation: pulse 2s infinite;
+}
+
+.countdown-number {
+    transition: all 0.3s ease;
+}
+
+.countdown-number:hover {
+    transform: scale(1.2);
+    color: #e63946;
+}
+
+.showcase-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.sidebar {
+    width: 250px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.sidebar-item {
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.sidebar-item:hover {
+    background: #f0f0f0;
+}
+
+.sidebar-item.active {
+    background: #2a2a2a;
+    color: white;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    gap: 30px;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.product-image {
+    flex: 1;
+    position: relative;
+}
+
+.product-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.sale-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #e63946;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-details {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.deal-label {
+    color: #e63946;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.countdown {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.countdown-item {
+    text-align: center;
+}
+
+.countdown-number {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2a2a2a;
+}
+
+.countdown-label {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.shop-now-btn {
+    background: #2a2a2a;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.shop-now-btn:hover {
+    background: #e63946;
+    transform: translateY(-2px);
+}

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - LunaLuxe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/loading-states.css">
+    <link rel="stylesheet" href="css/moon-bg.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="moon-bg-animated">
+        <div class="moon"></div>
+        <div class="star" style="top:12vh;left:20vw;width:3px;height:3px;animation-delay:0.2s;"></div>
+        <div class="star" style="top:18vh;left:80vw;width:2px;height:2px;animation-delay:0.7s;"></div>
+        <div class="star" style="top:30vh;left:60vw;width:2.5px;height:2.5px;animation-delay:1.1s;"></div>
+        <div class="star" style="top:50vh;left:40vw;width:2px;height:2px;animation-delay:0.4s;"></div>
+        <div class="star" style="top:70vh;left:70vw;width:3px;height:3px;animation-delay:1.5s;"></div>
+        <div class="star" style="top:80vh;left:10vw;width:2px;height:2px;animation-delay:0.9s;"></div>
+        <div class="star" style="top:90vh;left:90vw;width:2.5px;height:2.5px;animation-delay:1.8s;"></div>
+    </div>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo 1.png" alt="Luna Luxe Logo">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="customer-service.html">Customer Service</a></li>
+                    <li><a href="#" onclick="alert('FAQ section coming soon!')">FAQ</a></li>
+                </ul>
+                <div class="cart-icon">
+                    <a href="cart.html" class="cart-link">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </nav>
+            <div class="checkout-steps">
+                <span class="progress-step active" data-step="1">1</span>
+                <span class="step-divider">></span>
+                <span class="progress-step" data-step="2">2</span>
+                <span class="step-divider">></span>
+                <span class="progress-step" data-step="3">3</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="checkout-container">
+        <div class="checkout-content">
+            <!-- Customer Details Section -->
+            <section id="customerDetails" class="checkout-section active">
+                <h2>Customer Details</h2>
+                <form id="customerForm" class="checkout-form">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="254700000000" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Delivery Address</label>
+                        <textarea id="address" name="address" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+                    <button type="submit" class="btn-primary" aria-label="Continue to Payment">
+                        <span class="button-text">Continue to Payment</span>
+                        <div class="spinner" style="display: none;"></div>
+                    </button>
+                </form>
+            </section>
+
+            <!-- Payment Method Section -->
+            <section id="paymentMethod" class="checkout-section">
+                <h2>Select Payment Method</h2>
+                <div class="payment-options modern-payment-options">
+                    <div class="payment-option" data-method="mpesa" tabindex="0" aria-label="Pay with M-Pesa">
+                        <div class="payment-logo modern-mpesa-logo">
+                            <img src="images/payment/mpesa-logo.svg" alt="M-Pesa">
+                        </div>
+                        <span class="provider-name">M-Pesa</span>
+                    </div>
+                    <div class="payment-option" data-method="visa" tabindex="0" aria-label="Pay with Visa">
+                        <div class="payment-logo modern-visa-logo">
+                            <img src="images/payment/visa-logo.svg" alt="Visa">
+                        </div>
+                        <span class="provider-name">Visa</span>
+                    </div>
+                    <div class="payment-option" data-method="airtel" tabindex="0" aria-label="Pay with Airtel Money">
+                        <div class="payment-logo modern-airtel-logo">
+                            <img src="images/payment/airtel-money-logo.svg" alt="Airtel Money">
+                        </div>
+                        <span class="provider-name">Airtel Money</span>
+                    </div>
+                </div>
+
+                <!-- M-Pesa Payment Form -->
+                <form id="mpesaForm" class="payment-form">
+                    <div class="form-group">
+                        <label for="mpesaPhone">M-Pesa Phone Number</label>
+                        <input type="tel" id="mpesaPhone" name="mpesaPhone" placeholder="254700000000" required>
+                    </div>
+                    <button type="submit" class="btn-primary">
+                        <span class="button-text">Pay with M-Pesa</span>
+                        <div class="spinner" style="display: none;"></div>
+                    </button>
+                </form>
+
+                <!-- Visa Payment Form -->
+                <form id="visaForm" class="payment-form">
+                    <div class="form-group">
+                        <label for="cardNumber">Card Number</label>
+                        <div class="card-input-group">
+                            <input type="text" id="cardNumber" name="cardNumber" placeholder="4111 1111 1111 1111" required>
+                            <div class="card-type"></div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="expiryDate">Expiry Date</label>
+                            <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" name="cvv" placeholder="123" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="cardName">Name on Card</label>
+                        <input type="text" id="cardName" name="cardName" required>
+                    </div>
+                    <button type="submit" class="btn-primary">
+                        <span class="button-text">Pay with Card</span>
+                        <div class="spinner" style="display: none;"></div>
+                    </button>
+                </form>
+
+                <!-- Airtel Money Payment Form -->
+                <form id="airtelForm" class="payment-form">
+                    <div class="form-group">
+                        <label for="airtelPhone">Airtel Money Phone Number</label>
+                        <input type="tel" id="airtelPhone" name="airtelPhone" placeholder="254700000000" required>
+                    </div>
+                    <button type="submit" class="btn-primary">
+                        <span class="button-text">Pay with Airtel Money</span>
+                        <div class="spinner" style="display: none;"></div>
+                    </button>
+                </form>
+            </section>
+
+            <!-- Order Confirmation Section -->
+            <section id="orderConfirmation" class="checkout-section">
+                <div class="confirmation-content">
+                    <div class="success-checkmark animate"></div>
+                    <h2>Order Confirmation</h2>
+                    <div class="confirmation-details">
+                        <div class="order-number">
+                            <h3>Order Number</h3>
+                            <p id="orderNumber"></p>
+                        </div>
+                        <div class="payment-status">
+                            <h3>Payment Status</h3>
+                            <p id="paymentStatus"></p>
+                        </div>
+                        <div class="delivery-details">
+                            <h3>Delivery Details</h3>
+                            <p id="deliveryAddress"></p>
+                        </div>
+                    </div>
+                    <button class="btn-primary" onclick="window.location.href='index.html'">Continue Shopping</button>
+                </div>
+            </section>
+        </div>
+
+        <!-- Order Summary Sidebar -->
+        <aside class="order-summary">
+            <h2>Order Summary</h2>
+            <div class="cart-items" id="checkoutCartItems">
+                <!-- Cart items will be dynamically loaded here -->
+            </div>
+            <div class="summary-totals">
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="subtotal">KSh 0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Shipping</span>
+                    <span id="shipping">KSh 0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Tax (16% VAT)</span>
+                    <span id="tax">KSh 0.00</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Total</span>
+                    <span id="total">KSh 0.00</span>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="loading-overlay hidden">
+        <div class="loading-icon">
+            <div class="loading-circle"></div>
+            <div class="loading-circle"></div>
+            <div class="loading-circle"></div>
+        </div>
+        <p id="loadingMessage">Processing payment...</p>
+    </div>
+
+    <noscript>
+        <p style="color: red; text-align: center;">JavaScript is disabled in your browser. Please enable it for the best experience.</p>
+    </noscript>
+
+    <!-- Scripts -->
+    <script src="js/checkout.js"></script>
+    <script src="js/payments/mpesa.js"></script>
+    <script src="js/payments/visa.js"></script>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Step navigation for checkout
+    const customerForm = document.getElementById('customerForm');
+    const customerSection = document.getElementById('customerDetails');
+    const paymentSection = document.getElementById('paymentMethod');
+    if (customerForm && customerSection && paymentSection) {
+        customerForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            let valid = true;
+            this.querySelectorAll('[required]').forEach(function(input) {
+                if (!input.value.trim()) {
+                    input.classList.add('error');
+                    valid = false;
+                } else {
+                    input.classList.remove('error');
+                }
+            });
+            if (!valid) return;
+            customerSection.classList.remove('active');
+            paymentSection.classList.add('active');
+            // Update progress indicator
+            document.querySelectorAll('.progress-step').forEach((el, idx) => {
+                el.classList.toggle('active', idx === 1);
+                el.classList.toggle('completed', idx < 1);
+            });
+        });
+    }
+
+    // Payment method selection logic
+    const paymentOptions = document.querySelectorAll('.payment-option');
+    const mpesaForm = document.getElementById('mpesaForm');
+    const visaForm = document.getElementById('visaForm');
+    const airtelForm = document.getElementById('airtelForm');
+    if (paymentOptions.length && mpesaForm && visaForm && airtelForm) {
+        paymentOptions.forEach(option => {
+            option.addEventListener('click', function() {
+                paymentOptions.forEach(opt => opt.classList.remove('selected'));
+                this.classList.add('selected');
+                if (this.dataset.method === 'mpesa') {
+                    mpesaForm.style.display = 'block';
+                    visaForm.style.display = 'none';
+                    airtelForm.style.display = 'none';
+                } else if (this.dataset.method === 'visa') {
+                    mpesaForm.style.display = 'none';
+                    visaForm.style.display = 'block';
+                    airtelForm.style.display = 'none';
+                } else {
+                    mpesaForm.style.display = 'none';
+                    visaForm.style.display = 'none';
+                    airtelForm.style.display = 'block';
+                }
+            });
+        });
+        // Show M-Pesa by default
+        paymentOptions[0].click();
+    }
+    // Payment form submission logic (simulate success)
+    function showConfirmation() {
+        document.getElementById('paymentMethod').classList.remove('active');
+        document.getElementById('orderConfirmation').classList.add('active');
+        document.querySelectorAll('.progress-step').forEach((el, idx) => {
+            el.classList.toggle('active', idx === 2);
+            el.classList.toggle('completed', idx < 2);
+        });
+    }
+    // Show loading overlay
+    function showLoading(message) {
+        const overlay = document.getElementById('loadingOverlay');
+        if (overlay) {
+            overlay.classList.remove('hidden');
+            document.getElementById('loadingMessage').textContent = message || 'Processing payment...';
+        }
+    }
+    // Hide loading overlay
+    function hideLoading() {
+        const overlay = document.getElementById('loadingOverlay');
+        if (overlay) overlay.classList.add('hidden');
+    }
+    // Show notification
+    function showNotification(message, type) {
+        let notif = document.createElement('div');
+        notif.className = `checkout-notification ${type || 'info'}`;
+        notif.textContent = message;
+        document.body.appendChild(notif);
+        setTimeout(() => notif.remove(), 3500);
+    }
+    // Enhance payment form feedback
+    if (mpesaForm) {
+        mpesaForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            showLoading('Processing M-Pesa payment...');
+            const phone = document.getElementById('mpesaPhone').value;
+            const amount = document.getElementById('total').textContent.replace(/[^\d.]/g, '');
+            try {
+                const res = await fetch('/api/payments/mpesa', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ phone, amount })
+                });
+                const data = await res.json();
+                hideLoading();
+                if (res.ok && data.success) {
+                    showNotification('M-Pesa payment successful!','success');
+                    showConfirmation();
+                } else {
+                    showNotification(data.message || 'M-Pesa payment failed.','error');
+                }
+            } catch (err) {
+                hideLoading();
+                showNotification('Network error. Please try again.','error');
+            }
+        });
+    }
+    if (visaForm) {
+        visaForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            showLoading('Processing Visa payment...');
+            const cardNumber = document.getElementById('cardNumber').value;
+            const expiryDate = document.getElementById('expiryDate').value;
+            const cvv = document.getElementById('cvv').value;
+            const cardName = document.getElementById('cardName').value;
+            const amount = document.getElementById('total').textContent.replace(/[^\d.]/g, '');
+            try {
+                const res = await fetch('/api/payments/visa', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ cardNumber, expiryDate, cvv, cardName, amount })
+                });
+                const data = await res.json();
+                hideLoading();
+                if (res.ok && data.success) {
+                    showNotification('Visa payment successful!','success');
+                    showConfirmation();
+                } else {
+                    showNotification(data.message || 'Visa payment failed.','error');
+                }
+            } catch (err) {
+                hideLoading();
+                showNotification('Network error. Please try again.','error');
+            }
+        });
+    }
+    if (airtelForm) {
+        airtelForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            showLoading('Processing Airtel Money payment...');
+            const phone = document.getElementById('airtelPhone').value;
+            const amount = document.getElementById('total').textContent.replace(/[^\d.]/g, '');
+            try {
+                const res = await fetch('/api/payments/airtel', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ phone, amount })
+                });
+                const data = await res.json();
+                hideLoading();
+                if (res.ok && data.success) {
+                    showNotification('Airtel Money payment successful!','success');
+                    showConfirmation();
+                } else {
+                    showNotification(data.message || 'Airtel Money payment failed.','error');
+                }
+            } catch (err) {
+                hideLoading();
+                showNotification('Network error. Please try again.','error');
+            }
+        });
+    }
+    // Test mode: autofill forms for demo
+    window.enableTestMode = function() {
+        document.getElementById('mpesaPhone').value = '254700000000';
+        document.getElementById('cardNumber').value = '4111 1111 1111 1111';
+        document.getElementById('expiryDate').value = '12/30';
+        document.getElementById('cvv').value = '123';
+        document.getElementById('cardName').value = 'Test User';
+        document.getElementById('airtelPhone').value = '254700000000';
+    }
+    // Uncomment to enable test mode by default
+    // window.enableTestMode();
+});
+</script>
+</body>
+</html>

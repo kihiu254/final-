@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - MR TRENDY</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+       <!-- Top Bar -->
+       <div class="top-bar">
+        <div>Free shipping, 30-day return or refund guarantee.</div>
+        <div class="top-bar-links">
+            <button class="color-scheme-toggle" aria-label="Toggle color scheme"></button> |
+            <a href="login.html">Login</a> |
+            <a href="signup.html">SIGN UP</a> |
+    
+        </div>
+    </div>
+    <!-- Main Header -->
+    <div class="main-header fade-in">
+        <div class="logo"><img src="images/logo 1.png" alt="LunaLuxe - Home Logo"><span></span></div>
+        <nav class="main-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="customer-service.html">Customer Service</a></li>
+                <li><a href="#" id="faq-link" aria-haspopup="dialog" aria-controls="faq-modal">FAQ</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <a href="#" class="search-icon" aria-label="Open search"><i class="fas fa-search"></i></a>
+            <a href="cart.html" class="cart-icon" aria-label="View cart">
+                <i class="fas fa-shopping-basket"></i>
+                <span class="cart-count">0</span>
+            </a>
+        </div>
+    </div>
+    <!-- Blog Content -->
+    <main class="blog-container">
+        <!-- Blog Filters -->
+        <div class="blog-filters">
+            <div class="search-container">
+                <input type="text" id="blogSearch" placeholder="Search articles...">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+            <div class="category-filters">
+                <button class="category-filter active" data-category="all">All</button>
+                <button class="category-filter" data-category="fashion">Fashion</button>
+                <button class="category-filter" data-category="trends">Trends</button>
+                <button class="category-filter" data-category="lifestyle">Lifestyle</button>
+            </div>
+        </div>
+
+        <!-- Blog Posts Grid -->
+        <div class="blog-posts" id="blogPosts">
+            <!-- Posts will be dynamically loaded here -->
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination" id="blogPagination">
+            <!-- Pagination will be dynamically generated -->
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#" onclick="alert('FAQ section coming soon!')">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Customer Care</h3>
+                    <ul>
+                        <li><a href="shipping.html">Shipping Information</a></li>
+                        <li><a href="returns.html">Returns & Exchanges</a></li>
+                        <li><a href="size-guide.html">Size Guide</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="customer-service.html">Contact Support</a></li>
+                        <li><a href="order-tracking.html">Track Your Order</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact & Social</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +254 112081866</p>
+                        <p><i class="fas fa-envelope"></i> info@lunaluxe.co.ke</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Luna Luxe Fashion House, Nairobi, Kenya</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1B5vFLJBBx/?mibextid=qi2Omg" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/luna_luxe254?igsh=aG56MHBwZHMxY3I5" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/lunaluxe" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.tiktok.com/@luna_luxe254" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Luna Luxe. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/blog.js"></script>
+</body>
+</html>

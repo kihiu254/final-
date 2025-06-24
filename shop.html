@@ -1,0 +1,1636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Luna Luxe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/moon-bg.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="moon-bg-animated">
+        <div class="moon"></div>
+        <div class="star" style="top:12vh;left:20vw;width:3px;height:3px;animation-delay:0.2s;"></div>
+        <div class="star" style="top:18vh;left:80vw;width:2px;height:2px;animation-delay:0.7s;"></div>
+        <div class="star" style="top:30vh;left:60vw;width:2.5px;height:2.5px;animation-delay:1.1s;"></div>
+        <div class="star" style="top:50vh;left:40vw;width:2px;height:2px;animation-delay:0.4s;"></div>
+        <div class="star" style="top:70vh;left:70vw;width:3px;height:3px;animation-delay:1.5s;"></div>
+        <div class="star" style="top:80vh;left:10vw;width:2px;height:2px;animation-delay:0.9s;"></div>
+        <div class="star" style="top:90vh;left:90vw;width:2.5px;height:2.5px;animation-delay:1.8s;"></div>
+    </div>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div>Free shipping, 30-day return or refund guarantee.</div>
+        <div class="top-bar-links">
+            <button class="color-scheme-toggle" aria-label="Toggle color scheme"></button> |
+            <a href="login.html">Login</a> |
+            <a href="signup.html">SIGN UP</a>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <div class="main-header fade-in">
+        <div class="logo"><img src="images/logo 1.png" alt="LunaLuxe - Home Logo"><span></span></div>
+        <nav class="main-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="customer-service.html">Customer Service</a></li>
+                <li><a href="#" id="faq-link" aria-haspopup="dialog" aria-controls="faq-modal">FAQ</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <a href="#" class="search-icon" aria-label="Open search"><i class="fas fa-search"></i></a>
+            <a href="cart.html" class="cart-icon" aria-label="View cart">
+                <i class="fas fa-shopping-basket"></i>
+                <span class="cart-count">0</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Shop Header -->
+   <h3>Our Collection</h3>
+
+    <!-- Filter and Categories Bar -->
+    <div class="filter-categories-bar">
+        <div class="container">
+            <div class="categories-section">
+                <h2 class="section-title">Shop By Category</h2>
+                <div class="categories-container">
+                    <div class="category-item">
+                        <div class="category-header">
+                            <i class="fas fa-male"></i>
+                            <span>Men's Fashion</span>
+                            <i class="fas fa-chevron-down toggle-icon"></i>
+                        </div>
+                        <div class="category-dropdown">
+                            <div class="category-option" data-category="mens-tshirts">
+                                <i class="fas fa-tshirt"></i>
+                                <span>T-Shirts</span>
+                            </div>
+                            <div class="category-option" data-category="mens-shirts">
+                                <i class="fas fa-suitcase-rolling"></i>
+                                <span>Shirts</span>
+                            </div>
+                            <div class="category-option" data-category="mens-pants">
+                                <i class="fas fa-jeans"></i>
+                                <span>Pants</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category-item">
+                        <div class="category-header">
+                            <i class="fas fa-female"></i>
+                            <span>Women's Fashion</span>
+                            <i class="fas fa-chevron-down toggle-icon"></i>
+                        </div>
+                        <div class="category-dropdown">
+                            <div class="category-option" data-category="womens-dresses">
+                                <i class="fas fa-dress"></i>
+                                <span>Dresses</span>
+                            </div>
+                            <div class="category-option" data-category="womens-blouses">
+                                <i class="fas fa-blouse"></i>
+                                <span>Blouses</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category-item">
+                        <div class="category-header">
+                            <i class="fas fa-globe-africa"></i>
+                            <span>African Designs</span>
+                            <i class="fas fa-chevron-down toggle-icon"></i>
+                        </div>
+                        <div class="category-dropdown">
+                            <div class="category-option">
+                                <i class="fas fa-tshirt"></i>
+                                <span>Printed Shirts</span>
+                            </div>
+                            <div class="category-option">
+                                <i class="fas fa-dress"></i>
+                                <span>Traditional Dresses</span>
+                            </div>
+                            <div class="category-option">
+                                <i class="fas fa-accessible-icon"></i>
+                                <span>Accessories</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category-item">
+                        <div class="category-header">
+                            <i class="fas fa-heart"></i>
+                            <span>Wedding Collection</span>
+                            <i class="fas fa-chevron-down toggle-icon"></i>
+                        </div>
+                        <div class="category-dropdown">
+                            <div class="category-option">
+                                <i class="fas fa-bride"></i>
+                                <span>Bridal Wear</span>
+                            </div>
+                            <div class="category-option">
+                                <i class="fas fa-groom"></i>
+                                <span>Groom Wear</span>
+                            </div>
+                            <div class="category-option">
+                                <i class="fas fa-gifts"></i>
+                                <span>Wedding Accessories</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category-item">
+                        <div class="category-header">
+                            <i class="fas fa-child"></i>
+                            <span>Kids Fashion</span>
+                            <i class="fas fa-chevron-down toggle-icon"></i>
+                        </div>
+                        <div class="category-dropdown">
+                            <div class="category-option">
+                                <i class="fas fa-child"></i>
+                                <span>Boys</span>
+                            </div>
+                            <div class="category-option">
+                                <i class="fas fa-child"></i>
+                                <span>Girls</span>
+                            </div>
+                            <div class="category-option">
+                                <i class="fas fa-socks"></i>
+                                <span>Accessories</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category-item">
+                        <div class="category-header">
+                            <i class="fas fa-shoe-prints"></i>
+                            <span>Footwear</span>
+                            <i class="fas fa-chevron-down toggle-icon"></i>
+                        </div>
+                        <div class="category-dropdown">
+                            <div class="category-option" data-category="footwear-sneakers">
+                                <i class="fas fa-running"></i>
+                                <span>Sneakers</span>
+                            </div>
+                            <div class="category-option" data-category="footwear-sandals">
+                                <i class="fas fa-sandal"></i>
+                                <span>Sandals</span>
+                            </div>
+                            <div class="category-option" data-category="footwear-boots">
+                                <i class="fas fa-boot"></i>
+                                <span>Boots</span>
+                            </div>
+                            <div class="category-option" data-category="footwear-heels">
+                                <i class="fas fa-female"></i>
+                                <span>Heels</span>
+                            </div>
+                            <div class="category-option" data-category="footwear-loafers">
+                                <i class="fas fa-shoe-prints"></i>
+                                <span>Loafers</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Product Grid -->
+        <main class="product-grid">
+            <!-- Products Section -->
+            <div class="featured-column">
+                <h2 class="column-title">Products</h2>
+                <div class="product-grid-container">
+                    <!-- All Product Cards -->
+                    <div class="product-card" data-category="womens-dresses">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0015.jpg" alt="Designer Dress">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Designer Dress</h3>
+                            <div class="product-price">KSh 19,999</div>
+                            <div class="product-rating" data-rating="(4.8)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #000000;"></div>
+                                <div class="color-option" style="background: #FF0000;"></div>
+                                <div class="color-option" style="background: #0000FF;"></div>
+                            </div>
+                            <div class="size-options">
+                                <div class="size-option">S</div>
+                                <div class="size-option">M</div>
+                                <div class="size-option">L</div>
+                                <div class="size-option">XL</div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="womens-bags">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0016.jpg" alt="Luxury Handbag">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Luxury Handbag</h3>
+                            <div class="product-price">KSh 14,999</div>
+                            <div class="product-rating" data-rating="(4.9)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #000000;"></div>
+                                <div class="color-option" style="background: #8B4513;"></div>
+                                <div class="color-option" style="background: #A52A2A;"></div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="mens-watches">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0017.jpg" alt="Signature Watch">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Signature Watch</h3>
+                            <div class="product-price">KSh 24,999</div>
+                            <div class="product-rating" data-rating="(5.0)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #000000;"></div>
+                                <div class="color-option" style="background: #C0C0C0;"></div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="mens-shoes">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0018.jpg" alt="Classic Shoes">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Classic Shoes</h3>
+                            <div class="product-price">KSh 12,999</div>
+                            <div class="product-rating" data-rating="(4.7)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #000000;"></div>
+                                <div class="color-option" style="background: #8B4513;"></div>
+                            </div>
+                            <div class="size-options">
+                                <div class="size-option">39</div>
+                                <div class="size-option">40</div>
+                                <div class="size-option">41</div>
+                                <div class="size-option">42</div>
+                                <div class="size-option">43</div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="womens-dresses">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0019.jpg" alt="Elegant Dress">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Elegant Dress</h3>
+                            <div class="product-price">KSh 17,999</div>
+                            <div class="product-rating" data-rating="(4.8)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #000000;"></div>
+                                <div class="color-option" style="background: #FF0000;"></div>
+                                <div class="color-option" style="background: #0000FF;"></div>
+                            </div>
+                            <div class="size-options">
+                                <div class="size-option">S</div>
+                                <div class="size-option">M</div>
+                                <div class="size-option">L</div>
+                                <div class="size-option">XL</div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Continue pattern for remaining images -->
+                    <div class="product-card" data-category="mens-shoes">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0025.jpg" alt="Classic Leather Shoes">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Classic Leather Shoes</h3>
+                            <div class="product-price">KSh 12,999</div>
+                            <div class="product-rating" data-rating="(4.8)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #3a3a3a;"></div>
+                                <div class="color-option" style="background: #964B00;"></div>
+                                <div class="color-option" style="background: #C0C0C0;"></div>
+                            </div>
+                            <div class="size-options">
+                                <div class="size-option">38</div>
+                                <div class="size-option">39</div>
+                                <div class="size-option">40</div>
+                                <div class="size-option">41</div>
+                                <div class="size-option">42</div>
+                                <div class="size-option">43</div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 2 -->
+                    <div class="product-card" data-category="womens-bags">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0043.jpg" alt="Premium Leather Handbag">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Premium Leather Handbag</h3>
+                            <div class="product-price">KSh 15,999</div>
+                            <div class="product-rating" data-rating="(4.9)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #000000;"></div>
+                                <div class="color-option" style="background: #8B4513;"></div>
+                                <div class="color-option" style="background: #D2691E;"></div>
+                            </div>
+                            <div class="size-options">
+                                <div class="size-option">One Size</div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Product Card 3 -->
+                    <div class="product-card" data-category="wedding-attire">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0044.jpg" alt="Traditional Wedding Attire">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Traditional Wedding Attire</h3>
+                            <div class="product-price">KSh 24,999</div>
+                            <div class="product-rating" data-rating="(5.0)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #FF0000;"></div>
+                                <div class="color-option" style="background: #FFD700;"></div>
+                                <div class="color-option" style="background: #008000;"></div>
+                            </div>
+                            <div class="size-options">
+                                <div class="size-option">S</div>
+                                <div class="size-option">M</div>
+                                <div class="size-option">L</div>
+                                <div class="size-option">XL</div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 4 -->
+                    <div class="product-card" data-category="african-designs">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0042.jpg" alt="Designer African Print Dress">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Designer African Print Dress</h3>
+                            <div class="product-price">KSh 18,999</div>
+                            <div class="product-rating" data-rating="(4.7)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #0000FF;"></div>
+                                <div class="color-option" style="background: #FFFF00;"></div>
+                                <div class="color-option" style="background: #008000;"></div>
+                            </div>
+                            <div class="size-options">
+                                <div class="size-option">S</div>
+                                <div class="size-option">M</div>
+                                <div class="size-option">L</div>
+                                <div class="size-option">XL</div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Continue pattern for remaining images -->
+                    <div class="product-card" data-category="mens-watches">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0020.jpg" alt="Premium Watch">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Premium Watch</h3>
+                            <div class="product-price">KSh 34,999</div>
+                            <div class="product-rating" data-rating="(4.9)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #000000;"></div>
+                                <div class="color-option" style="background: #C0C0C0;"></div>
+                                <div class="color-option" style="background: #FFD700;"></div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="womens-bags">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0021.jpg" alt="Designer Bag">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Designer Bag</h3>
+                            <div class="product-price">KSh 22,999</div>
+                            <div class="product-rating" data-rating="(4.8)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #000000;"></div>
+                                <div class="color-option" style="background: #8B4513;"></div>
+                                <div class="color-option" style="background: #A52A2A;"></div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="womens-shoes">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0022.jpg" alt="Fashion Boots">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Fashion Boots</h3>
+                            <div class="product-price">KSh 16,999</div>
+                            <div class="product-rating" data-rating="(4.7)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #000000;"></div>
+                                <div class="color-option" style="background: #8B4513;"></div>
+                            </div>
+                            <div class="size-options">
+                                <div class="size-option">36</div>
+                                <div class="size-option">37</div>
+                                <div class="size-option">38</div>
+                                <div class="size-option">39</div>
+                                <div class="size-option">40</div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="mens-watches">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0023.jpg" alt="Luxury Watch">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Luxury Watch</h3>
+                            <div class="product-price">KSh 45,999</div>
+                            <div class="product-rating" data-rating="(5.0)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #000000;"></div>
+                                <div class="color-option" style="background: #C0C0C0;"></div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="womens-bags">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0024.jpg" alt="Classic Handbag">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Classic Handbag</h3>
+                            <div class="product-price">KSh 19,999</div>
+                            <div class="product-rating" data-rating="(4.8)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #000000;"></div>
+                                <div class="color-option" style="background: #964B00;"></div>
+                                <div class="color-option" style="background: #8B4513;"></div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Continue with remaining images -->
+                    <div class="product-card" data-category="womens-dresses">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0026.jpg" alt="Premium Dress">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Premium Dress</h3>
+                            <div class="product-price">KSh 28,999</div>
+                            <div class="product-rating" data-rating="(4.9)">★★★★★</div>
+                            <div class="size-options">
+                                <div class="size-option">S</div>
+                                <div class="size-option">M</div>
+                                <div class="size-option">L</div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="womens-dresses">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0027.jpg" alt="Modern Dress">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Modern Dress</h3>
+                            <div class="product-price">KSh 21,999</div>
+                            <div class="product-rating" data-rating="(4.8)">★★★★★</div>
+                            <div class="size-options">
+                                <div class="size-option">S</div>
+                                <div class="size-option">M</div>
+                                <div class="size-option">L</div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="womens-bags">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0028.jpg" alt="Trendy Bag">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Trendy Bag</h3>
+                            <div class="product-price">KSh 17,999</div>
+                            <div class="product-rating" data-rating="(4.7)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #000000;"></div>
+                                <div class="color-option" style="background: #8B4513;"></div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="mens-watches">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0029.jpg" alt="Fashion Watch">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Fashion Watch</h3>
+                            <div class="product-price">KSh 32,999</div>
+                            <div class="product-rating" data-rating="(4.9)">★★★★★</div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="womens-shoes">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0030.jpg" alt="Designer Heels">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Designer Heels</h3>
+                            <div class="product-price">KSh 15,999</div>
+                            <div class="product-rating" data-rating="(4.8)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #000000;"></div>
+                                <div class="color-option" style="background: #CD853F;"></div>
+                                <div class="color-option" style="background: #8B0000;"></div>
+                            </div>
+                            <div class="size-options">
+                                <div class="size-option">36</div>
+                                <div class="size-option">37</div>
+                                <div class="size-option">38</div>
+                                <div class="size-option">39</div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Continue with remaining images -->
+                    <div class="product-card" data-category="womens-dresses">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0031.jpg" alt="Luxury Dress">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Luxury Dress</h3>
+                            <div class="product-price">KSh 35,999</div>
+                            <div class="product-rating" data-rating="(4.9)">★★★★★</div>
+                            <div class="size-options">
+                                <div class="size-option">S</div>
+                                <div class="size-option">M</div>
+                                <div class="size-option">L</div>
+                                <div class="size-option">XL</div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="mens-watches">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0032.jpg" alt="Stylish Watch">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Stylish Watch</h3>
+                            <div class="product-price">KSh 28,999</div>
+                            <div class="product-rating" data-rating="(4.7)">★★★★★</div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="womens-bags">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0033.jpg" alt="Fashion Bag">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Fashion Bag</h3>
+                            <div class="product-price">KSh 16,999</div>
+                            <div class="product-rating" data-rating="(4.6)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #000000;"></div>
+                                <div class="color-option" style="background: #8B4513;"></div>
+                                <div class="color-option" style="background: #A52A2A;"></div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="womens-shoes">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0034.jpg" alt="Trendy Boots">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Trendy Boots</h3>
+                            <div class="product-price">KSh 23,999</div>
+                            <div class="product-rating" data-rating="(4.8)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #000000;"></div>
+                                <div class="color-option" style="background: #8B4513;"></div>
+                            </div>
+                            <div class="size-options">
+                                <div class="size-option">37</div>
+                                <div class="size-option">38</div>
+                                <div class="size-option">39</div>
+                                <div class="size-option">40</div>
+                                <div class="size-option">41</div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="mens-watches">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0035.jpg" alt="Smart Watch">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Smart Watch</h3>
+                            <div class="product-price">KSh 39,999</div>
+                            <div class="product-rating" data-rating="(4.9)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #000000;"></div>
+                                <div class="color-option" style="background: #C0C0C0;"></div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Continue with remaining images -->
+                    <div class="product-card" data-category="womens-bags">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0036.jpg" alt="Designer Tote">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Designer Tote</h3>
+                            <div class="product-price">KSh 18,999</div>
+                            <div class="product-rating" data-rating="(4.7)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #000000;"></div>
+                                <div class="color-option" style="background: #8B4513;"></div>
+                                <div class="color-option" style="background: #A52A2A;"></div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="mens-shoes">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0037.jpg" alt="Modern Sneakers">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Modern Sneakers</h3>
+                            <div class="product-price">KSh 12,999</div>
+                            <div class="product-rating" data-rating="(4.6)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #000000;"></div>
+                                <div class="color-option" style="background: #FFFFFF;"></div>
+                                <div class="color-option" style="background: #FF0000;"></div>
+                            </div>
+                            <div class="size-options">
+                                <div class="size-option">40</div>
+                                <div class="size-option">41</div>
+                                <div class="size-option">42</div>
+                                <div class="size-option">43</div>
+                                <div class="size-option">44</div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Add remaining IMG-20250404-WA* images -->
+                    <div class="product-card" data-category="womens-dresses">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0038.jpg" alt="Evening Dress">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Evening Dress</h3>
+                            <div class="product-price">KSh 26,999</div>
+                            <div class="product-rating" data-rating="(4.9)">★★★★★</div>
+                            <div class="size-options">
+                                <div class="size-option">S</div>
+                                <div class="size-option">M</div>
+                                <div class="size-option">L</div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="womens-dresses">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0039.jpg" alt="Sale Dress">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Sale Dress</h3>
+                            <div class="product-price">KSh 14,999</div>
+                            <div class="product-rating" data-rating="(4.5)">★★★★★</div>
+                            <div class="size-options">
+                                <div class="size-option">S</div>
+                                <div class="size-option">M</div>
+                                <div class="size-option">L</div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Add the remaining images following the same pattern -->
+                    <!-- IMG-20250404-WA0040.jpg through IMG-20250405-WA0004.jpg -->
+                    <div class="product-card" data-category="womens-bags">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0040.jpg" alt="Discount Bag">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Discount Bag</h3>
+                            <div class="product-price">KSh 13,999</div>
+                            <div class="product-rating" data-rating="(4.5)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #000000;"></div>
+                                <div class="color-option" style="background: #8B4513;"></div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="mens-watches">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0041.jpg" alt="Special Watch">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Special Watch</h3>
+                            <div class="product-price">KSh 29,999</div>
+                            <div class="product-rating" data-rating="(4.8)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #000000;"></div>
+                                <div class="color-option" style="background: #C0C0C0;"></div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="womens-shoes">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0042.jpg" alt="Sale Shoes">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Sale Shoes</h3>
+                            <div class="product-price">KSh 11,999</div>
+                            <div class="product-rating" data-rating="(4.6)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #000000;"></div>
+                                <div class="color-option" style="background: #FFFFFF;"></div>
+                            </div>
+                            <div class="size-options">
+                                <div class="size-option">40</div>
+                                <div class="size-option">41</div>
+                                <div class="size-option">42</div>
+                                <div class="size-option">43</div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="womens-dresses">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0043.jpg" alt="Special Dress">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Special Dress</h3>
+                            <div class="product-price">KSh 22,999</div>
+                            <div class="product-rating" data-rating="(4.7)">★★★★★</div>
+                            <div class="size-options">
+                                <div class="size-option">S</div>
+                                <div class="size-option">M</div>
+                                <div class="size-option">L</div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="mens-watches">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0044.jpg" alt="Discount Watch">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Discount Watch</h3>
+                            <div class="product-price">KSh 19,999</div>
+                            <div class="product-rating" data-rating="(4.5)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #000000;"></div>
+                                <div class="color-option" style="background: #C0C0C0;"></div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="womens-bags">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0045.jpg" alt="Sale Bag">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Sale Bag</h3>
+                            <div class="product-price">KSh 9,999</div>
+                            <div class="product-rating" data-rating="(4.4)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #000000;"></div>
+                                <div class="color-option" style="background: #8B4513;"></div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="womens-dresses">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0046.jpg" alt="Fashion Dress">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Fashion Dress</h3>
+                            <div class="product-price">KSh 24,999</div>
+                            <div class="product-rating" data-rating="(4.8)">★★★★★</div>
+                            <div class="size-options">
+                                <div class="size-option">S</div>
+                                <div class="size-option">M</div>
+                                <div class="size-option">L</div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="mens-shoes">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0047.jpg" alt="Classic Boots">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Classic Boots</h3>
+                            <div class="product-price">KSh 27,999</div>
+                            <div class="product-rating" data-rating="(4.9)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #000000;"></div>
+                                <div class="color-option" style="background: #8B4513;"></div>
+                            </div>
+                            <div class="size-options">
+                                <div class="size-option">38</div>
+                                <div class="size-option">39</div>
+                                <div class="size-option">40</div>
+                                <div class="size-option">41</div>
+                                <div class="size-option">42</div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Add remaining images through IMG-20250405-WA0004.jpg -->
+                    <div class="product-card" data-category="mens-watches">
+                        <div class="product-image">
+                            <img src="images/IMG-20250405-WA0001.jpg" alt="Modern Watch">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Modern Watch</h3>
+                            <div class="product-price">KSh 31,999</div>
+                            <div class="product-rating" data-rating="(4.7)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #000000;"></div>
+                                <div class="color-option" style="background: #C0C0C0;"></div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="womens-dresses">
+                        <div class="product-image">
+                            <img src="images/IMG-20250405-WA0002.jpg" alt="Summer Dress">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Summer Dress</h3>
+                            <div class="product-price">KSh 16,999</div>
+                            <div class="product-rating" data-rating="(4.6)">★★★★★</div>
+                            <div class="size-options">
+                                <div class="size-option">S</div>
+                                <div class="size-option">M</div>
+                                <div class="size-option">L</div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="mens-shoes">
+                        <div class="product-image">
+                            <img src="images/IMG-20250405-WA0003.jpg" alt="Luxury Boots">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Luxury Boots</h3>
+                            <div class="product-price">KSh 33,999</div>
+                            <div class="product-rating" data-rating="(4.9)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #000000;"></div>
+                                <div class="color-option" style="background: #8B4513;"></div>
+                            </div>
+                            <div class="size-options">
+                                <div class="size-option">37</div>
+                                <div class="size-option">38</div>
+                                <div class="size-option">39</div>
+                                <div class="size-option">40</div>
+                                <div class="size-option">41</div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="mens-watches">
+                        <div class="product-image">
+                            <img src="images/IMG-20250405-WA0004.jpg" alt="Designer Watch">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Designer Watch</h3>
+                            <div class="product-price">KSh 42,999</div>
+                            <div class="product-rating" data-rating="(5.0)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #000000;"></div>
+                                <div class="color-option" style="background: #C0C0C0;"></div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Add remaining product cards with options -->
+                    <div class="product-card" data-category="womens-dresses">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0048.jpg" alt="Casual Dress">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Casual Dress</h3>
+                            <div class="product-price">KSh 15,999</div>
+                            <div class="product-rating" data-rating="(4.6)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #000000;"></div>
+                                <div class="color-option" style="background: #FF0000;"></div>
+                                <div class="color-option" style="background: #0000FF;"></div>
+                            </div>
+                            <div class="size-options">
+                                <div class="size-option">S</div>
+                                <div class="size-option">M</div>
+                                <div class="size-option">L</div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="womens-shoes">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0049.jpg" alt="Luxury Heels">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Luxury Heels</h3>
+                            <div class="product-price">KSh 21,999</div>
+                            <div class="product-rating" data-rating="(4.8)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #000000;"></div>
+                                <div class="color-option" style="background: #8B0000;"></div>
+                                <div class="color-option" style="background: #CD853F;"></div>
+                            </div>
+                            <div class="size-options">
+                                <div class="size-option">36</div>
+                                <div class="size-option">37</div>
+                                <div class="size-option">38</div>
+                                <div class="size-option">39</div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Continue with remaining images through IMG-20250404-WA0057.jpg -->
+                    <div class="product-card" data-category="mens-shoes">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0050.jpg" alt="Casual Shoes">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Casual Shoes</h3>
+                            <div class="product-price">KSh 13,999</div>
+                            <div class="product-rating" data-rating="(4.7)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #000000;"></div>
+                                <div class="color-option" style="background: #8B4513;"></div>
+                            </div>
+                            <div class="size-options">
+                                <div class="size-option">40</div>
+                                <div class="size-option">41</div>
+                                <div class="size-option">42</div>
+                                <div class="size-option">43</div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="womens-bags">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0051.jpg" alt="Luxury Bag">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Luxury Bag</h3>
+                            <div class="product-price">KSh 19,999</div>
+                            <div class="product-rating" data-rating="(4.8)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #000000;"></div>
+                                <div class="color-option" style="background: #8B4513;"></div>
+                                <div class="color-option" style="background: #A52A2A;"></div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="womens-dresses">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0052.jpg" alt="Fashion Dress">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Fashion Dress</h3>
+                            <div class="product-price">KSh 22,999</div>
+                            <div class="product-rating" data-rating="(4.7)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #000000;"></div>
+                                <div class="color-option" style="background: #FF0000;"></div>
+                                <div class="color-option" style="background: #0000FF;"></div>
+                            </div>
+                            <div class="size-options">
+                                <div class="size-option">S</div>
+                                <div class="size-option">M</div>
+                                <div class="size-option">L</div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="mens-watches">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0053.jpg" alt="Luxury Watch">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Luxury Watch</h3>
+                            <div class="product-price">KSh 38,999</div>
+                            <div class="product-rating" data-rating="(4.9)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #000000;"></div>
+                                <div class="color-option" style="background: #C0C0C0;"></div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="womens-dresses">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0054.jpg" alt="Designer Dress">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Designer Dress</h3>
+                            <div class="product-price">KSh 27,999</div>
+                            <div class="product-rating" data-rating="(4.8)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #000000;"></div>
+                                <div class="color-option" style="background: #FF0000;"></div>
+                                <div class="color-option" style="background: #0000FF;"></div>
+                            </div>
+                            <div class="size-options">
+                                <div class="size-option">S</div>
+                                <div class="size-option">M</div>
+                                <div class="size-option">L</div>
+                                <div class="size-option">XL</div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="mens-shoes">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0055.jpg" alt="Classic Shoes">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Classic Shoes</h3>
+                            <div class="product-price">KSh 14,999</div>
+                            <div class="product-rating" data-rating="(4.7)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #000000;"></div>
+                                <div class="color-option" style="background: #8B4513;"></div>
+                            </div>
+                            <div class="size-options">
+                                <div class="size-option">40</div>
+                                <div class="size-option">41</div>
+                                <div class="size-option">42</div>
+                                <div class="size-option">43</div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="womens-bags">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0056.jpg" alt="Fashion Bag">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Fashion Bag</h3>
+                            <div class="product-price">KSh 18,999</div>
+                            <div class="product-rating" data-rating="(4.8)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #000000;"></div>
+                                <div class="color-option" style="background: #8B4513;"></div>
+                                <div class="color-option" style="background: #A52A2A;"></div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="womens-dresses">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0057.jpg" alt="Luxury Dress">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Luxury Dress</h3>
+                            <div class="product-price">KSh 32,999</div>
+                            <div class="product-rating" data-rating="(4.9)">★★★★★</div>
+                            <div class="size-options">
+                                <div class="size-option">S</div>
+                                <div class="size-option">M</div>
+                                <div class="size-option">L</div>
+                                <div class="size-option">XL</div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Complete remaining product cards -->
+                    <div class="product-card" data-category="mens-shoes">
+                        <div class="product-image">
+                            <img src="images/IMG-20250405-WA0005.jpg" alt="Premium Sandals">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Premium Sandals</h3>
+                            <div class="product-price">KSh 8,999</div>
+                            <div class="product-rating" data-rating="(4.6)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #000000;"></div>
+                                <div class="color-option" style="background: #8B4513;"></div>
+                                <div class="color-option" style="background: #CD853F;"></div>
+                            </div>
+                            <div class="size-options">
+                                <div class="size-option">36</div>
+                                <div class="size-option">37</div>
+                                <div class="size-option">38</div>
+                                <div class="size-option">39</div>
+                                <div class="size-option">40</div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product Cards -->
+                    <div class="product-card" data-category="footwear-sneakers">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0043.jpg" alt="Stylish Sneakers">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Stylish Sneakers</h3>
+                            <div class="product-price">KSh 15,999</div>
+                            <div class="product-rating" data-rating="(4.9)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #000000;"></div>
+                                <div class="color-option" style="background: #FFFFFF;"></div>
+                                <div class="color-option" style="background: #FF0000;"></div>
+                            </div>
+                            <div class="size-options">
+                                <div class="size-option">40</div>
+                                <div class="size-option">41</div>
+                                <div class="size-option">42</div>
+                                <div class="size-option">43</div>
+                                <div class="size-option">44</div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="footwear-sneakers">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0044.jpg" alt="Urban Sneakers">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Urban Sneakers</h3>
+                            <div class="product-price">KSh 17,999</div>
+                            <div class="product-rating" data-rating="(4.8)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #000000;"></div>
+                                <div class="color-option" style="background: #808080;"></div>
+                                <div class="color-option" style="background: #FFFFFF;"></div>
+                            </div>
+                            <div class="size-options">
+                                <div class="size-option">40</div>
+                                <div class="size-option">41</div>
+                                <div class="size-option">42</div>
+                                <div class="size-option">43</div>
+                                <div class="size-option">44</div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Continue with remaining sneakers -->
+                    <div class="product-card" data-category="footwear-sneakers">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0045.jpg" alt="Sport Sneakers">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Sport Sneakers</h3>
+                            <div class="product-price">KSh 16,999</div>
+                            <div class="product-rating" data-rating="(4.7)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #000000;"></div>
+                                <div class="color-option" style="background: #0000FF;"></div>
+                                <div class="color-option" style="background: #FF0000;"></div>
+                            </div>
+                            <div class="size-options">
+                                <div class="size-option">40</div>
+                                <div class="size-option">41</div>
+                                <div class="size-option">42</div>
+                                <div class="size-option">43</div>
+                                <div class="size-option">44</div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Additional sneakers -->
+                    <div class="product-card" data-category="footwear-sneakers">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0046.jpg" alt="Performance Sneakers">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Performance Sneakers</h3>
+                            <div class="product-price">KSh 18,999</div>
+                            <div class="product-rating" data-rating="(4.8)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #000000;"></div>
+                                <div class="color-option" style="background: #808080;"></div>
+                                <div class="color-option" style="background: #FF0000;"></div>
+                            </div>
+                            <div class="size-options">
+                                <div class="size-option">40</div>
+                                <div class="size-option">41</div>
+                                <div class="size-option">42</div>
+                                <div class="size-option">43</div>
+                                <div class="size-option">44</div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Continue pattern through WA0053.jpg -->
+                    <div class="product-card" data-category="footwear-sneakers">
+                        <div class="product-image">
+                            <img src="images/IMG-20250404-WA0047.jpg" alt="Casual Sneakers">
+                            <div class="hover-actions">
+                                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Casual Sneakers</h3>
+                            <div class="product-price">KSh 14,999</div>
+                            <div class="product-rating" data-rating="(4.6)">★★★★★</div>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #000000;"></div>
+                                <div class="color-option" style="background: #FFFFFF;"></div>
+                                <div class="color-option" style="background: #808080;"></div>
+                            </div>
+                            <div class="size-options">
+                                <div class="size-option">40</div>
+                                <div class="size-option">41</div>
+                                <div class="size-option">42</div>
+                                <div class="size-option">43</div>
+                                <div class="size-option">44</div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- And so on through IMG-20250404-WA0053.jpg -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Instagram Feed -->
+    <section class="instagram-feed">
+        <div class="container">
+            <h2 class="section-title">Follow Us on Instagram</h2>
+            <div class="instagram-grid">
+                <div class="instagram-item">
+                    <img src="images/instagram1.jpg" alt="Instagram Post">
+                </div>
+                <div class="instagram-item">
+                    <img src="images/instagram2.jpg" alt="Instagram Post">
+                </div>
+                <div class="instagram-item">
+                    <img src="images/instagram3.jpg" alt="Instagram Post">
+                </div>
+                <div class="instagram-item">
+                    <img src="images/instagram4.jpg" alt="Instagram Post">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h3>Subscribe to Our Newsletter</h3>
+            <p>Get the latest updates on new arrivals and exclusive offers</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email address">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#" onclick="alert('FAQ section coming soon!')">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Customer Care</h3>
+                    <ul>
+                        <li><a href="shipping.html">Shipping Information</a></li>
+                        <li><a href="returns.html">Returns &amp; Exchanges</a></li>
+                        <li><a href="size-guide.html">Size Guide</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1B5vFLJBBx/?mibextid=qi2Omg" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/luna_luxe254?igsh=aG56MHBwZHMxY3I5" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/lunaluxe" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.tiktok.com/@luna_luxe254" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Luna Luxe. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FAQ Modal Placeholder -->
+    <div id="faq-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="faq-title" style="display:none;">
+        <div class="modal-content">
+            <h2 id="faq-title">Frequently Asked Questions</h2>
+            <p>Our FAQ section is coming soon! For now, please contact customer service for any questions.</p>
+            <button id="close-faq" aria-label="Close FAQ">Close</button>
+        </div>
+    </div>
+
+    <script src="js/shop.js"></script>
+</body>
+</html>

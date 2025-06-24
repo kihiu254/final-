@@ -1,0 +1,5 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="48" height="48" rx="12" fill="#ED1B2F"/>
+<path d="M24 12C18.477 12 14 16.477 14 22C14 27.523 18.477 32 24 32C29.523 32 34 27.523 34 22C34 16.477 29.523 12 24 12ZM24 29C20.134 29 17 25.866 17 22C17 18.134 20.134 15 24 15C27.866 15 31 18.134 31 22C31 25.866 27.866 29 24 29Z" fill="white"/>
+<text x="24" y="44" text-anchor="middle" font-size="8" fill="white" font-family="Arial, Helvetica, sans-serif">Airtel</text>
+</svg>

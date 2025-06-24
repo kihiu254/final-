@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Your Order | Luna Luxe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="stylesheet" href="css/customer-care.css">
+    <link rel="stylesheet" href="css/order-tracking.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="customer-service.html">Customer Service</a></li>
+            <li><a href="#" onclick="alert('FAQ section coming soon!')">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-container">
+        <div class="content-wrapper">
+            <h1>Track Your Order</h1>
+            
+            <section class="tracking-section">
+                <div class="tracking-form">
+                    <h2>Enter Order Details</h2>
+                    <form id="trackingForm" class="support-form">
+                        <div class="form-group">
+                            <label for="orderNumber">Order Number</label>
+                            <input type="text" id="orderNumber" name="orderNumber" placeholder="Enter your order number" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                        </div>
+                        <button type="submit" class="submit-button">Track Order</button>
+                    </form>
+                </div>
+
+                <div id="trackingResult" class="tracking-result" style="display: none;">
+                    <h2>Order Status</h2>
+                    <div class="order-info">
+                        <div class="info-group">
+                            <span class="label">Order Number:</span>
+                            <span id="displayOrderNumber" class="value"></span>
+                        </div>
+                        <div class="info-group">
+                            <span class="label">Order Date:</span>
+                            <span id="orderDate" class="value"></span>
+                        </div>
+                        <div class="info-group">
+                            <span class="label">Estimated Delivery:</span>
+                            <span id="estimatedDelivery" class="value"></span>
+                        </div>
+                    </div>
+
+                    <div class="tracking-timeline">
+                        <div class="timeline-step completed">
+                            <div class="step-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="step-content">
+                                <h3>Order Placed</h3>
+                                <p>Your order has been confirmed</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-step completed">
+                            <div class="step-icon">
+                                <i class="fas fa-box"></i>
+                            </div>
+                            <div class="step-content">
+                                <h3>Processing</h3>
+                                <p>Your order is being processed</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-step active">
+                            <div class="step-icon">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <div class="step-content">
+                                <h3>In Transit</h3>
+                                <p>Your order is on its way</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-step">
+                            <div class="step-icon">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <div class="step-content">
+                                <h3>Delivered</h3>
+                                <p>Package delivered</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tracking-help">
+                <h2>Need Help?</h2>
+                <p>Can't find your order or have questions about delivery? Our customer service team is here to help.</p>
+                <div class="help-options">
+                    <a href="customer-service.html" class="help-link">
+                        <i class="fas fa-headset"></i>
+                        Contact Support
+                    </a>
+                    <i class="fas fa-question-circle"></i>
+                    <li><a href="#" onclick="alert('View FAQs section coming soon!')">View FAQs</a></li>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Customer Care</h3>
+                    <ul>
+                        <li><a href="shipping.html">Shipping Information</a></li>
+                        <li><a href="returns.html">Returns & Exchanges</a></li>
+                        <li><a href="size-guide.html">Size Guide</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact & Social</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +254 112081866</p>
+                        <p><i class="fas fa-envelope"></i> info@lunaluxe.co.ke</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Luna Luxe Fashion House, Nairobi, Kenya</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1B5vFLJBBx/?mibextid=qi2Omg" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/luna_luxe254?igsh=aG56MHBwZHMxY3I5" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/lunaluxe" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.tiktok.com/@luna_luxe254" target="_blank"><i class="fab fa-tiktok"></i></a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Luna Luxe. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('trackingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const orderNumber = document.getElementById('orderNumber').value;
+            
+            // Show tracking result
+            document.getElementById('trackingResult').style.display = 'block';
+            document.getElementById('displayOrderNumber').textContent = orderNumber;
+            
+            // Set mock data for demo
+            const orderDate = new Date();
+            const deliveryDate = new Date();
+            deliveryDate.setDate(orderDate.getDate() + 3);
+            
+            document.getElementById('orderDate').textContent = orderDate.toLocaleDateString();
+            document.getElementById('estimatedDelivery').textContent = deliveryDate.toLocaleDateString();
+        });
+    </script>
+</body>
+</html>

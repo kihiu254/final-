@@ -1,0 +1,249 @@
+/* Base Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation */
+.main-nav {
+    background-color: #333;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    justify-content: center;
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover, .main-nav a.active {
+    color: #ffd700;
+}
+
+/* Page Container */
+.page-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Content Wrapper */
+.content-wrapper {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+/* Page Title */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 2.5rem;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+h1:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background-color: #ffd700;
+}
+
+/* Shipping Sections */
+.shipping-section {
+    margin-bottom: 30px;
+}
+
+.shipping-section h2 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.shipping-option {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.shipping-option:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.shipping-option h3 {
+    font-size: 1.3rem;
+    margin: 15px 0;
+    color: #555;
+}
+
+ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 25px;
+}
+
+li:before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #4caf50;
+    font-weight: bold;
+}
+
+a {
+    color: #ffd700;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #e6c200;
+}
+
+/* Footer */
+.main-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0 20px;
+    margin-top: 60px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-section h3:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #ffd700;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: #ffd700;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #ffd700;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #444;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.social-links a:hover {
+    background-color: #ffd700;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+    }
+    
+    .content-wrapper {
+        padding: 20px;
+    }
+}

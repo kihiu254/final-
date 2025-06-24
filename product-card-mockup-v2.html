@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enhanced Product Card Mockup v2</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f5f7fa;
+            padding: 40px;
+        }
+        .mockup-container {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        .product-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+        }
+        .product-image {
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+        }
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .product-card:hover .product-image img {
+            transform: scale(1.1);
+        }
+        .product-info {
+            padding: 20px;
+        }
+        .product-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .product-price {
+            font-size: 18px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #6C63FF, #4ECDC4);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 15px;
+        }
+        .color-options {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .color-option {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .color-option:hover {
+            transform: scale(1.2);
+        }
+        .size-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+        .size-option {
+            padding: 5px 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .size-option:hover {
+            background: #f5f5f5;
+        }
+        .size-option.selected {
+            background: #6C63FF;
+            color: white;
+            border-color: #6C63FF;
+        }
+        .add-to-cart {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 25px;
+            background: linear-gradient(135deg, #6C63FF, #4ECDC4);
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .add-to-cart:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(108, 99, 255, 0.4);
+        }
+        .add-to-cart::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #FF6B6B, #FFD93D);
+            transition: all 0.6s ease;
+            z-index: 1;
+        }
+        .add-to-cart:hover::before {
+            left: 0;
+        }
+        .add-to-cart span {
+            position: relative;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="mockup-container">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="images/IMG-20250404-WA0025.jpg" alt="Classic Leather Shoes">
+            </div>
+            <div class="product-info">
+                <h3 class="product-title">Classic Leather Shoes</h3>
+                <div class="product-price">KSh 12,999</div>
+                <div class="color-options">
+                    <div class="color-option" style="background: #3a3a3a;"></div>
+                    <div class="color-option" style="background: #964B00;"></div>
+                    <div class="color-option" style="background: #C0C0C0;"></div>
+                </div>
+                <div class="size-options">
+                    <div class="size-option">38</div>
+                    <div class="size-option">39</div>
+                    <div class="size-option">40</div>
+                    <div class="size-option">41</div>
+                    <div class="size-option">42</div>
+                    <div class="size-option">43</div>
+                </div>
+                <button class="add-to-cart"><span>ADD TO CART</span></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

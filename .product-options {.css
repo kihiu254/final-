@@ -1,0 +1,44 @@
+.product-options {
+    margin: 15px 0;
+}
+
+.color-options, .size-options {
+    margin: 10px 0;
+}
+
+.color-options span, .size-options span {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.color-select {
+    display: flex;
+    gap: 10px;
+}
+
+.color-btn {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.color-btn:hover {
+    transform: scale(1.1);
+}
+
+.color-btn.selected {
+    outline: 2px solid #000;
+    outline-offset: 2px;
+}
+
+.size-select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}

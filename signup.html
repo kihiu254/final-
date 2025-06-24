@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Luna Luxe</title>
+    <link rel="stylesheet" href="css/auth.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-form">
+            <h2>Create Your Luna Luxe Account</h2>
+            <form id="signupForm">
+                <div class="form-group">
+                    <input type="text" id="username" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                    <small id="passwordStrength">Password must be at least 8 characters long with numbers and special characters.</small>
+                </div>
+                <div class="terms-checkbox">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">I agree to Luna Luxe's <a href="terms.html">Terms and Conditions</a></label>
+                </div>
+                <button type="submit" class="auth-btn">Create Account</button>
+            </form>
+            <p class="auth-link">Already have an account? <a href="login.html">Log In</a></p>
+        </div>
+    </div>
+
+    <footer class="auth-footer">
+        <p>&copy; 2025 Luna Luxe. All rights reserved.</p>
+    </footer>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>

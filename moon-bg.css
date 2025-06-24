@@ -1,0 +1,37 @@
+/* LunaLuxe Animated Moonlit Background */
+.moon-bg-animated {
+  position: fixed;
+  z-index: -1;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  pointer-events: none;
+  background: radial-gradient(ellipse at 60% 20%, #a1a6ff 0%, #232946 40%, #16161a 100%);
+  overflow: hidden;
+}
+.moon {
+  position: absolute;
+  top: 6vh;
+  left: 58vw;
+  width: 180px;
+  height: 180px;
+  background: radial-gradient(circle at 40% 40%, #fffbe6 80%, #eebbc3 100%);
+  border-radius: 50%;
+  box-shadow: 0 0 120px 40px #a1a6ffcc, 0 0 200px 80px #eebbc3cc;
+  opacity: 1;
+  animation: moon-glow 6s ease-in-out infinite alternate;
+  border: 2px solid #fffbe6cc;
+}
+@keyframes moon-glow {
+  0% { box-shadow: 0 0 120px 40px #a1a6ffcc, 0 0 200px 80px #eebbc3cc; }
+  100% { box-shadow: 0 0 180px 60px #eebbc3ff, 0 0 300px 120px #a1a6ffff; }
+}
+.star {
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.9;
+  animation: twinkle 2s infinite alternate;
+}
+@keyframes twinkle {
+  0% { opacity: 0.7; }
+  100% { opacity: 1; }
+}

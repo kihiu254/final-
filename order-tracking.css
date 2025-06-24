@@ -1,0 +1,140 @@
+/* Order Tracking Page Styles */
+.tracking-section {
+    margin-bottom: 40px;
+    padding: 30px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.tracking-section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.tracking-form {
+    margin-bottom: 40px;
+}
+
+.tracking-result {
+    background: var(--bg-light);
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.order-info {
+    margin-bottom: 30px;
+}
+
+.info-group {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.info-group .label {
+    font-weight: 500;
+    width: 150px;
+    color: var(--text-dark);
+}
+
+.info-group .value {
+    color: var(--text-light);
+}
+
+.tracking-timeline {
+    position: relative;
+    margin-top: 40px;
+}
+
+.timeline-step {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.timeline-step:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 40px;
+    bottom: 0;
+    width: 2px;
+    background: var(--border-color);
+}
+
+.step-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    border: 2px solid var(--border-color);
+    z-index: 1;
+}
+
+.timeline-step.completed .step-icon {
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+    color: white;
+}
+
+.timeline-step.active .step-icon {
+    background: white;
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+.step-content {
+    flex: 1;
+}
+
+.step-content h3 {
+    margin: 0 0 5px;
+    color: var(--text-dark);
+}
+
+.step-content p {
+    margin: 0;
+    color: var(--text-light);
+}
+
+.tracking-help {
+    text-align: center;
+    padding: 40px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.help-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .tracking-section {
+        padding: 20px;
+    }
+    
+    .info-group {
+        flex-direction: column;
+    }
+    
+    .info-group .label {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    .help-options {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
